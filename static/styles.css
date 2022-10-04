@@ -1,0 +1,56 @@
+/* Size for brand */
+body {
+  background-image: url('https://cdn.dal.ca/faculty/computerscience/cs-education/_jcr_content/contentPar/featureslider/featureSlider/featureslide/image.adaptive.910.high.jpg/1602699267504.jpg');
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.leftside{
+  height:100%;
+  width:30%;
+  background-color: #fff;
+}
+
+.rightside{
+  height:100%;
+  width:70%;
+  background-color:blue;
+}
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
